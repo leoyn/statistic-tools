@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Dice simulation</title>
+        <style>
+
+            #iterationCountSlider {
+                width: 100%;
+                max-width: 800px;
+            }
+
+            .wrapper {
+                width: 100%;
+                overflow-y: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dice simulation</h1>
+        <p>A = Roll a dice until we get 6 under the condition that the amount of rolls is even.</p>
+        <div class="wrapper">
+            <canvas width="1250" height="500"></canvas>
+        </div>
+        <script async src="app.js" type="text/JavaScript"></script>
+        <p>N = <span id="iterationCountLabel">5000</span></p>
+        <input id="iterationCountSlider" type="range" value="5000" min="10" max="50000" step="10">
+    </body>
+</html>

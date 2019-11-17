@@ -1,6 +1,6 @@
 <?php
-    require_once("mathlib.php");
-    require_once("datalib.php");
+    require_once("../lib/math.php");
+    require_once("../lib/data.php");
 
     $math = new Math();
     $data = new Data();

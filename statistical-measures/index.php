@@ -1,6 +1,6 @@
 <?php
-    require_once("mathlib.php");
-    require_once("datalib.php");
+    require_once("../lib/math.php");
+    require_once("../lib/data.php");
 
     $math = new Math();
     $data = new Data();
@@ -98,7 +98,7 @@
             </tr>
         </table>
         <h2>Histogram</h2>
-        <img src="statistical-measures.histogram.php?set=<?php $data->pa($array) ?>&borders=<?php $data->pa($borders) ?>">
+        <img src="histogram.php?set=<?php $data->pa($array) ?>&borders=<?php $data->pa($borders) ?>">
 <?php
     }
 ?>
